@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "My Variable of this app is ${{ vars.MY_VARIABLE }}"
+          echo "My Secret is ${{ secrets.MY_SECRET}}"
           echo test, and deploy your project.
