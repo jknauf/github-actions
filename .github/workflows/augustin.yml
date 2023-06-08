@@ -37,4 +37,4 @@ jobs:
         run: |
           echo "Test von $TEST_VAR"
           echo "Variable ${{ vars.MY_VARIABLE }}"
-          echo "Secret ${{ vars.MY_SECRET }}"
+          echo "Secret ${{ secrets.MY_SECRET }}"
