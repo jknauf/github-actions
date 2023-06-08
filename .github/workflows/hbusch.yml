@@ -25,4 +25,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: echo Hallo, Helge.....ich bin aus dem echo 
+        run: echo "Hallo, Helge.....ich bin aus dem echo ;-) "
