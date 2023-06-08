@@ -1,5 +1,6 @@
 FROM alphine:latest
 WORKDIR /app
-COPY . .
-RUN ls -l
+RUN mkdir -p /app
+COPY Readme.md /app
+RUN pwd
 EXPOSE 3000
