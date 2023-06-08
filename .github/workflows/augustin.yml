@@ -33,5 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo "Test von Anke "
-          echo "Variable $MY_VARIABLE"
+          echo "Variable ${{ vars.MY_VARIABLE }}"
           echo "Secret $MY_SECRET"
