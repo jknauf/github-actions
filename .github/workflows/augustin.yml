@@ -2,6 +2,9 @@
 
 name: augustin
 
+env:
+  TEST_VAR: Anke
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
@@ -32,6 +35,6 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo "Test von Anke "
+          echo "Test von $TEST_VAR"
           echo "Variable ${{ vars.MY_VARIABLE }}"
-          echo "Secret $MY_SECRET"
+          echo "Secret ${{ vars.MY_SECRET }}"
